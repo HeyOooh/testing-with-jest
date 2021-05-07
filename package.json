@@ -1,0 +1,22 @@
+{
+  "name": "testing-with-jest",
+  "version": "1.0.0",
+  "description": "Alla barnen trivdes i skolan utom Johan, han hade oftast huvudet i toan\r Alla barnen var på sommarlov utom Johan han var inlåst på toan",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeyOooh/testing-with-jest.git"
+  },
+  "author": "Andreas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HeyOooh/testing-with-jest/issues"
+  },
+  "homepage": "https://github.com/HeyOooh/testing-with-jest#readme"
+}
