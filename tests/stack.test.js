@@ -25,5 +25,5 @@ test('peek on stack with two or more elements returns the top element', () => {
     stack.push("doff");
     expect(stack.pop()).toBeDefined();
     expect(stack.pop()).toBeDefined();
-    expect(stack.pop()).toBe("dole"); // ole
+    expect(stack.pop()).toBe("ole");
 });

@@ -45,6 +45,6 @@ describe('Clicking "Pusha Edderkop och sen Skildpadde till stacken, testa"', () 
 		await alert.accept();
 
     let stack = await driver.findElement(By.id('top_of_stack')).getText();
-    expect(stack).toEqual("Skildpadde"); // Edderkop
+    expect(stack).toEqual("Edderkop"); 
 	});
 });
