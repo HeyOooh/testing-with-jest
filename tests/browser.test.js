@@ -32,3 +32,19 @@ describe('Clicking "Pusha till stacken"', () => {
 		await alert.accept();
 	});
 });
+
+// Testar peek knappen, lägger till "Edderkop" till Stacken
+// och ser att det är det som ligger överst (Edderkop) som visas när man trycker
+// på peek knappen
+describe('Clicking "Pusha Edderkop och sen Skildpadde till stacken, testa"', () => {
+	it('should show the item on top of the stack', async () => {
+		let push = await driver.findElement(By.id('push'));
+		await push.click();
+		let alert = await driver.switchTo().alert();
+		await alert.sendKeys("Edderkop");
+		await alert.accept();
+
+    let stack = await driver.findElement(By.id('top_of_stack')).getText();
+    expect(stack).toEqual("Skildpadde"); // Edderkop
+	});
+});
